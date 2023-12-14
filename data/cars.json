@@ -1,0 +1,331 @@
+[
+    {
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2019,
+        "price": 20000,
+        "photo": "assets/toyota_camry.jpg"
+    },
+    {
+        "make": "Honda",
+        "model": "Accord",
+        "year": 2018,
+        "price": 18000,
+        "photo": "assets/honda_accord.jpg"
+    },
+    {
+        "make": "Ford",
+        "model": "Mustang",
+        "year": 2020,
+        "price": 25000,
+        "photo": "assets/ford_mustang.jpg"
+    },
+    {
+        "make": "Chevrolet",
+        "model": "Camaro",
+        "year": 2017,
+        "price": 22000,
+        "photo": "assets/chevrolet_camaro.jpg"
+    },
+    {
+        "make": "Nissan",
+        "model": "Altima",
+        "year": 2016,
+        "price": 15000,
+        "photo": "assets/nissan_altima.jpg"
+    },
+    {
+        "make": "BMW",
+        "model": "3 Series",
+        "year": 2018,
+        "price": 28000,
+        "photo": "assets/bmw_3series.jpg"
+    },
+    {
+        "make": "Chevrolet",
+        "model": "Cruze",
+        "year": 2019,
+        "price": 17000,
+        "photo": "assets/chevrolet_cruze.jpg"
+    },
+    {
+        "make": "Tesla",
+        "model": "Model 3",
+        "year": 2020,
+        "price": 35000,
+        "photo": "assets/tesla_model3.jpg"
+    },
+    {
+        "make": "Audi",
+        "model": "A4",
+        "year": 2018,
+        "price": 27000,
+        "photo": "assets/audi_a4.jpg"
+    },
+    {
+        "make": "Mercedes-Benz",
+        "model": "C-Class",
+        "year": 2017,
+        "price": 29000,
+        "photo": "assets/mercedes_c_class.jpg"
+    },
+    {
+        "make": "Mazda",
+        "model": "CX-5",
+        "year": 2019,
+        "price": 24000,
+        "photo": "assets/mazda_cx5.jpg"
+    },
+    {
+        "make": "Subaru",
+        "model": "Outback",
+        "year": 2018,
+        "price": 22000,
+        "photo": "assets/subaru_outback.jpg"
+    },
+    {
+        "make": "Toyota",
+        "model": "RAV4",
+        "year": 2020,
+        "price": 25000,
+        "photo": "assets/toyota_rav4.jpg"
+    },
+    {
+        "make": "Honda",
+        "model": "Civic",
+        "year": 2016,
+        "price": 15000,
+        "photo": "assets/honda_civic.jpg"
+    },
+    {
+        "make": "Ford",
+        "model": "F-150",
+        "year": 2020,
+        "price": 30000,
+        "photo": "assets/ford_f150.jpg"
+    },
+    {
+        "make": "Nissan",
+        "model": "Sentra",
+        "year": 2019,
+        "price": 16000,
+        "photo": "assets/nissan_sentra.jpg"
+    },
+    {
+        "make": "Chevrolet",
+        "model": "Silverado",
+        "year": 2018,
+        "price": 29000,
+        "photo": "assets/chevrolet_silverado.jpg"
+    },
+    {
+        "make": "Kia",
+        "model": "Sorento",
+        "year": 2019,
+        "price": 25000,
+        "photo": "assets/kia_sorento.jpg"
+    },
+    {
+        "make": "Hyundai",
+        "model": "Elantra",
+        "year": 2020,
+        "price": 18000,
+        "photo": "assets/hyundai_elantra.jpg"
+    },
+    {
+        "make": "Volkswagen",
+        "model": "Golf",
+        "year": 2017,
+        "price": 20000,
+        "photo": "assets/volkswagen_golf.jpg"
+    },
+    {
+        "make": "Jeep",
+        "model": "Wrangler",
+        "year": 2018,
+        "price": 28000,
+        "photo": "assets/jeep_wrangler.jpg"
+    },
+    {
+        "make": "Dodge",
+        "model": "Charger",
+        "year": 2019,
+        "price": 26000,
+        "photo": "assets/dodge_charger.jpg"
+    },
+    {
+        "make": "BMW",
+        "model": "5 Series",
+        "year": 2020,
+        "price": 33000,
+        "photo": "assets/bmw_5series.jpg"
+    },
+    {
+        "make": "Lexus",
+        "model": "RX",
+        "year": 2019,
+        "price": 40000,
+        "photo": "assets/lexus_rx.jpg"
+    },
+    {
+        "make": "Infiniti",
+        "model": "Q50",
+        "year": 2018,
+        "price": 27000,
+        "photo": "assets/infiniti_q50.jpg"
+    },
+    {
+        "make": "Acura",
+        "model": "TLX",
+        "year": 2020,
+        "price": 30000,
+        "photo": "assets/acura_tlx.jpg"
+    },
+    {
+        "make": "Volvo",
+        "model": "XC90",
+        "year": 2017,
+        "price": 35000,
+        "photo": "assets/volvo_xc90.jpg"
+    },
+    {
+        "make": "GMC",
+        "model": "Sierra",
+        "year": 2018,
+        "price": 32000,
+        "photo": "assets/gmc_sierra.jpg"
+    },
+    {
+        "make": "Audi",
+        "model": "Q5",
+        "year": 2019,
+        "price": 35000,
+        "photo": "assets/audi_q5.jpg"
+    },
+    {
+        "make": "Mercedes-Benz",
+        "model": "GLC",
+        "year": 2020,
+        "price": 40000,
+        "photo": "assets/mercedes_glc.jpg"
+    },
+    {
+        "make": "Land Rover",
+        "model": "Range Rover Evoque",
+        "year": 2018,
+        "price": 37000,
+        "photo": "assets/landrover_evoque.jpg"
+    },
+    {
+        "make": "Porsche",
+        "model": "Cayenne",
+        "year": 2019,
+        "price": 60000,
+        "photo": "assets/porsche_cayenne.jpg"
+    },
+    {
+        "make": "Tesla",
+        "model": "Model S",
+        "year": 2020,
+        "price": 70000,
+        "photo": "assets/tesla_models.jpg"
+    },
+    {
+        "make": "Cadillac",
+        "model": "Escalade",
+        "year": 2019,
+        "price": 75000,
+        "photo": "assets/cadillac_escalade.jpg"
+    },
+    {
+        "make": "BMW",
+        "model": "X5",
+        "year": 2020,
+        "price": 58000,
+        "photo": "assets/bmw_x5.jpg"
+    },
+    {
+        "make": "Chevrolet",
+        "model": "Tahoe",
+        "year": 2018,
+        "price": 47000,
+        "photo": "assets/chevrolet_tahoe.jpg"
+    },
+    {
+        "make": "Ford",
+        "model": "Explorer",
+        "year": 2019,
+        "price": 35000,
+        "photo": "assets/ford_explorer.jpg"
+    },
+    {
+        "make": "Nissan",
+        "model": "Pathfinder",
+        "year": 2020,
+        "price": 31000,
+        "photo": "assets/nissan_pathfinder.jpg"
+    },
+    {
+        "make": "Jeep",
+        "model": "Grand Cherokee",
+        "year": 2019,
+        "price": 34000,
+        "photo": "assets/jeep_grandcherokee.jpg"
+    },
+    {
+        "make": "Toyota",
+        "model": "4Runner",
+        "year": 2020,
+        "price": 36000,
+        "photo": "assets/toyota_4runner.jpg"
+    },
+    {
+        "make": "Honda",
+        "model": "Pilot",
+        "year": 2018,
+        "price": 32000,
+        "photo": "assets/honda_pilot.jpg"
+    },
+    {
+        "make": "Subaru",
+        "model": "Forester",
+        "year": 2019,
+        "price": 28000,
+        "photo": "assets/subaru_forester.jpg"
+    },
+    {
+        "make": "Mazda",
+        "model": "CX-9",
+        "year": 2018,
+        "price": 30000,
+        "photo": "assets/mazda_cx9.jpg"
+    },
+    {
+        "make": "Lexus",
+        "model": "GX",
+        "year": 2020,
+        "price": 52000,
+        "photo": "assets/lexus_gx.jpg"
+    },
+    {
+        "make": "Infiniti",
+        "model": "QX60",
+        "year": 2019,
+        "price": 45000,
+        "photo": "assets/infiniti_qx60.jpg"
+    },
+    {
+        "make": "Acura",
+        "model": "MDX",
+        "year": 2020,
+        "price": 44000,
+        "photo": "assets/acura_mdx.jpg"
+    },
+    {
+        "make": "Volvo",
+        "model": "XC60",
+        "year": 2017,
+        "price": 36000,
+        "photo": "assets/volvo_xc60.jpg"
+    }
+]

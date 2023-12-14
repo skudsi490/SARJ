@@ -1,17 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Realtor Website</title>
-    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
-</head>
-<body>
-    <div id="search-container">
-        <input type="text" id="location-input" placeholder="Enter a location (e.g., New York)">
-        <button id="search-button">Search</button>
-    </div>
-    <div id="results-container"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<head>
+    <title>Used Cars Marketplace</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+
+
+    <header>
+        <img src="path_to_logo.png" alt="Company Logo" id="logo">
+    </header>
+
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="video-slider">
+
+    </section>
+
+    <section id="marketing-materials">
+        <article>
+            <h2>Our Best Deals</h2>
+            <p>Check out our best deals on used cars...</p>
+        </article>
+    </section>
+
+    <section id="search-filters">
+        <input type="text" id="search-input" placeholder="Search by make or model...">
+        <label for="price-range">Price Range:</label>
+        <input type="range" id="price-range" min="5000" max="50000" step="1000">
+        <span id="price-range-value">5000 - 50000</span>
+        <button id="search-button">Search</button>
+    </section>
+
+    <div id="cq-search-results"></div>
+
     <script src="../scripts/script.js"></script>
 </body>
+
 </html>

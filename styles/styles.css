@@ -1,25 +1,123 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-#search-container {
+/* Header and Logo */
+header {
+    background-color: #007bff;
+    color: white;
     text-align: center;
-    margin-top: 20px;
+    padding: 10px 0;
 }
 
-#location-input {
-    width: 300px;
-    padding: 10px;
+#logo {
+    height: 60px; /* Adjust as per your logo's dimensions */
+}
+
+/* Navbar */
+nav#navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav#navbar ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav#navbar ul li {
+    margin: 0 20px;
+}
+
+nav#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav#navbar ul li a:hover {
+    background-color: #555;
+}
+
+/* Video Slider Placeholder */
+#video-slider {
+    background-color: #ddd;
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Marketing Materials */
+#marketing-materials article {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Search Bar and Filters */
+#search-filters {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#search-filters input[type="text"],
+#search-filters input[type="range"] {
+    margin: 10px;
+    padding: 8px;
     font-size: 16px;
 }
 
-#search-button {
+#search-filters button {
+    background-color: #28a745;
+    color: white;
+    border: none;
     padding: 10px 20px;
-    font-size: 16px;
     cursor: pointer;
+    font-size: 16px;
 }
 
-#results-container {
-    margin-top: 20px;
-    text-align: center;
+#search-filters button:hover {
+    background-color: #218838;
+}
+
+/* Car Results */
+#cq-search-results {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1000px;
+}
+
+.car-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.car-card h3 {
+    margin: 0 0 10px 0;
+}
+
+.car-card p {
+    margin: 5px 0;
+}
+
+.car-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
