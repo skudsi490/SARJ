@@ -132,12 +132,13 @@ function displayCars(cars, selectedMake, selectedModel, selectedYear, maxPrice) 
 
     const filteredCars = cars.filter(car => {
         const filterByMake = selectedMake ? car.make === selectedMake : true;
-        const filterByModel = (selectedModel && selectedModel !== "Select Model") ? car.model === selectedModel : true;
-        const filterByYear = (selectedYear && selectedYear !== "Select Year") ? car.year.toString() === selectedYear : true;
+        const filterByModel = selectedModel && selectedModel !== "Select Model" ? car.model === selectedModel : true;
+        const filterByYear = selectedYear && selectedYear !== "Select Year" ? car.year.toString() === selectedYear : true;
         const filterByPrice = car.price <= maxPrice;
         return filterByMake && filterByModel && filterByYear && filterByPrice;
     });
 
+   
     if (filteredCars.length === 0) {
         resultsContainer.innerHTML = '<p>No cars match your criteria.</p>';
         return;
