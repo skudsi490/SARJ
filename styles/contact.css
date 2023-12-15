@@ -1,0 +1,12 @@
+.card-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-wrap: nowrap ;
+
+}
+.card-body{
+    padding: 100px;
+    font-size: xx-large;
+}
