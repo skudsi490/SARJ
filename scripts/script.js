@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     fetchCarsData();
+    displayLoggedInUser();
 
     carMakeSelect.addEventListener('change', function() {
         populateModelDropdown(this.value);
@@ -31,6 +32,32 @@ document.addEventListener('DOMContentLoaded', function() {
         fetchCarsData(selectedMake, selectedModel, selectedYear, maxPrice);
     });
 });
+
+
+function displayLoggedInUser() {
+    const userWelcomeContainer = document.getElementById('user-welcome-container');
+    const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+
+    if (loggedInUser && loggedInUser.username) {
+        const welcomeMessage = document.createElement('p');
+        welcomeMessage.className = 'welcome-message';
+        welcomeMessage.textContent = `Welcome, ${loggedInUser.username}!`;
+
+        const logoutButton = document.createElement('button');
+        logoutButton.className = 'logout-button filter-button'; 
+        logoutButton.textContent = 'Logout';
+        logoutButton.addEventListener('click', handleLogout);
+
+        userWelcomeContainer.appendChild(welcomeMessage);
+        userWelcomeContainer.appendChild(logoutButton);
+    }
+}
+
+function handleLogout() {
+    localStorage.removeItem('loggedInUser');
+    window.location.href = 'login.html';
+}
+
 
 function fetchCarsData(make = '', model = '', year = '', maxPrice = 50000) {
     const xhr = new XMLHttpRequest();
@@ -164,7 +191,22 @@ function displayCars(cars, selectedMake, selectedModel, selectedYear, maxPrice) 
 function attachOfferButtonEvents() {
     document.querySelectorAll('.offer-button').forEach(button => {
         button.addEventListener('click', function() {
-            alert('Offer button clicked for ');
+            const carCard = this.closest('.car-card');
+            const carMake = carCard.querySelector('h3').textContent.split(' ')[0];
+            const carModel = carCard.querySelector('h3').textContent.split(' ')[1];
+            const carYear = carCard.querySelector('p:nth-of-type(1)').textContent.split(': ')[1];
+            const carPrice = carCard.querySelector('p:nth-of-type(2)').textContent.split(': ')[1];
+            const carImageSrc = carCard.querySelector('img').src;
+
+            const queryParams = new URLSearchParams({
+                carMake: carMake,
+                carModel: carModel,
+                carYear: carYear,
+                carPrice: carPrice,
+                carImage: carImageSrc
+            });
+
+            window.location.href = `contact.html?${queryParams.toString()}`;
         });
     });
 }

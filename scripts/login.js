@@ -1,17 +1,22 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.getElementById('login-form');
-    loginForm.addEventListener('submit', function (event) {
+
+    loginForm.addEventListener('submit', function(event) {
         event.preventDefault();
 
-        // קוד לטיפול בהתחברות של המשתמש
-        // ...
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
 
-        // שמירת מספר המשתמשים המחוברים ב-LocalStorage
-        const connectedUsers = JSON.parse(localStorage.getItem('connectedUsers')) || [];
-        connectedUsers.push({ username: 'loggedInUser' }); // הוספת המשתמש שנכנס
-        localStorage.setItem('connectedUsers', JSON.stringify(connectedUsers));
-
-        // העברת המשתמש לדף Dashboard
-        window.location.href = "login.html";
+        if (validateCredentials(username, password)) {
+            localStorage.setItem('loggedInUser', JSON.stringify({ username: username }));
+            window.location.href = "index.html";
+        } else {
+            alert('Invalid username or password');
+        }
     });
 });
+
+function validateCredentials(username, password) {
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+    return users.some(user => user.username === username && user.password === password);
+}
