@@ -255,6 +255,20 @@ nav#navbar ul li a:hover, nav#navbar ul li a:focus {
     background-color: #020202;
 }
 
+footer {
+    background-color: #65299D;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -288,6 +302,10 @@ nav#navbar ul li a:hover, nav#navbar ul li a:focus {
         padding: 8px 16px;
         font-size: 0.9rem;
     }
+
+    footer p {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -315,6 +333,10 @@ nav#navbar ul li a:hover, nav#navbar ul li a:focus {
 
     .logout-button {
         padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+    
+    footer p {
         font-size: 0.8rem;
     }
 }
